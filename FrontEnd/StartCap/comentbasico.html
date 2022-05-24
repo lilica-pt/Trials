@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- como o navegador irá renderizar o resultado final -->
+<html lang="pt-br"> <!-- linguagem para questões de tradução -->
+<head>
+    <meta charset="UTF-8"> <!-- codificação a ser tutilizada, no caso do bloco de notas, seria limitado ao charset -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title> <!-- título da página -->
+    <link rel="stylesheet" href="comentbasico.css">
+</head>
+<body> <!-- principal sessão do site -->
+    <header> <!-- cabeçalho -->
+        <h1 id="titulo"> <!-- identificador único -->
+            Currículo
+        </h1>
+        <h3>
+            <div> <!-- um bloco genérico, sem referência, é só um bloco -->
+                <nav> <!-- menu de navegação -->
+                    <span> <!-- bloco de texto separado sem quebrar o fluxo -->
+                        <a href="../inicio.html" target="_self"> Início </a> <!-- link acessando diretório acima ../, na mesma página -->
+                    </span>
+                    <span>
+                        <a href = "//contato.txt" target = "_self"> Contato </a> <!-- para acessar arquivo -->
+                        <br>
+                        <a href="mailto:sou@lili.ca"> E-mail </a> <!-- links que abrem programas, como tel: abre o discador -->
+                    </span>
+                </nav>
+            </div>
+        </h3>
+    </header>
+    <figure> <!-- destaque -->
+        <img src="sun.jpeg" alt="foto de um campo de girassol ao entardecer em que um deles se destaca a frente">
+        <figcaption>Flor que me representa</figcaption> <!-- legenda -->
+    </figure>
+    <h2 class="itens"> <!-- agrupamento de elementos -->
+        <section> <!-- qualquer parte segmentada da página -->
+            Dados Pessoais...
+        </section>
+        <section>
+            Documentos..
+        </section>
+        <article> <!-- sessão autônoma, que faça sentindo sozinha, ex. uma postagem -->
+            <section>
+                Dados de Contato...
+            </section>
+        </article>
+    </h2>
+    <main> <!-- conteúdo exclusivo -->
+        <header> <!-- pode ser repetido por sessão -->
+            Curso Realizado
+        </header>
+        Curso de HTML <br />
+        <footer>
+            Atualizado em 2022 <!-- rodapé -->
+        </footer>
+    </main>
+    <aside> <!-- informação a parte, que não fará diferença para o main -->
+        Viagens
+        <article>
+            <header>
+                Portugal
+            </header>
+            <section>
+                de Lisboa a Porto
+            </section>
+        </article>
+    </aside>
+    <aside>
+        <table border = 1>
+            <caption><h4>Horários de Estudo</h4></caption>
+            <thead>
+                <th>Dias da Semana</th>
+            </thead>
+            <tbody>
+                <tr> <!-- coluna -->
+                    <td rowspan = 2> Manhã </td> <!-- linha e quantas ela ocupará -->
+                    <td> HTML </td>
+                </tr>
+                <tr>
+                    <td> Tarde </td>
+                    <td colspan = 2> HTML </td> <!-- quantas colunas irá ocupar -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>UAI</th>
+            </tfoot>
+        </table>
+    </aside>
+    <P>
+    <p>
+        <form method="get" action="https://google.com/search"> <!-- qual requisição e chamadas dess form -->
+            <input type="email" name="nome" placeholder="digite seu e-mail"> <br> <!-- tipo, nome e orientação de entrada-->
+            Disponível para contato <input type="checkbox" name="disponivel" value="sim" /> Sim <br> <!-- checkbox -->
+            <select name="horário de contato"> <!-- lista em dropdown -->
+                <option value="Selecione">Selecione opção</option>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select> <br>
+            Satisfação <input type="range" name="satisfacao" min="1" max="5" /> <br>
+            <textarea name="mensagem" cols="50" rows="10"></textarea> <br> <!-- caixa de texto com formatação -->
+            <input type="submit" name="enviar" placeholder="nome"> <!-- botão, se o tipo for button puro, ele não faz nenhuma ação -->
+            <input type="reset" name="limpar formulário" placeholder="limpar"> <br> <!-- botão limpar dados -->
+        </form>
+    </p>
+    <footer> <!-- também pode ser por sessão -->
+        <nav> <!-- menu de navegação pode ser repetido -->
+            LinkedIn
+            Instagram
+        </nav>
+        &copy; 2022 LiliCa <!-- aviso de copiright -->
+    </footer>
+</body>
+</html>

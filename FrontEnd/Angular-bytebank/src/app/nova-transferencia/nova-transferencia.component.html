@@ -1,0 +1,22 @@
+<!-- Transferência bancária -->
+<section class="container">
+  <form class="formulario" (ngSubmit)="transferir()"> <!-- estilizado como card -->
+      <h2 class="formulario__titulo">Nova Transferência</h2>
+
+      <div class="form-field">
+        <label class="form-field__label" for="valor">Valor</label>
+        <input class="formulario__input" id="valor" type="number" [(ngModel)]="valor" name ="valor"/>
+        <!-- A variável foi criada em ts. O ngModel passa o valor do template para a classe, ele é do tipo String, por isso, o bind (enviar o dado do arquivo TS para HTML). Com two-way-data bind [()] para receber e retornar -->
+      </div>
+
+      <div class="form-field">
+        <label class="form-field__label" for="destino">Destino</label>
+        <input class="formulario__input" id="destino" type="text" [(ngModel)]="destino" name ="destino" />
+      </div>
+
+      <div class="botao-wrapper">
+        <button class="botao" type="submit">Transferir</button>
+      </div>
+
+    </form>
+</section>

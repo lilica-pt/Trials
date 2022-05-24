@@ -1,0 +1,18 @@
+<!-- Esse arquivo pode ser EDITADO, mas nunca DELETADO
+ele é a porta de entrada da aplicação
+o arquivo index.html referencia o app.module.ts que chama este arquivo
+
+Não tem dados como parâmetro, mas estabelece como esses dados serão recebidos
+<app-nova-transferencia></app-nova-transferencia>
+<app-extrato></app-extrato>
+
+Ao invés de invocar os componentes pelo seletor, chamar o router para renderizar páginas
+routerLink carrega apenas o conteúdo referente ao componente
+routerLinkActive ativa o estilo quando a rota estiver ativa -->
+<header>
+  <a routerLink="extrato">Bytebank</a>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova transferência</a>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

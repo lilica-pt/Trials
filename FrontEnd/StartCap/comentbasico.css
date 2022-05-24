@@ -1,0 +1,48 @@
+/* instrução */
+html { /* seletor */
+    background-color: cornsilk;
+}
+
+#titulo { /* seletor através do id */
+    color: red; /* bloco */
+}
+
+.itens { /* seletor através da classe */
+    color: orange;
+    background-color: white; /* cor de fundo exclusiva da classe */
+    background-image: url("estudos.jpeg"); /* caminho da imagem, seja diretório ou site */
+    background-repeat: no-repeat; /* repetição de acordo com o eixo */
+    background-size: contain;/* imagem contida sobrará elementos */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* o último será o callback, caso não ache as demais */
+    font-weight: lighter; /* granulagem da linha das letras */
+    font-variant: small-caps; /* maiúsculo e minúsculo */
+    font-size: 1.3rem; /* poreferência em decimal de rem 1 = 16px */
+    text-indent: 2rem; /* recuo para realçar o texto */
+    text-align: right; /* alinhamento do texto */
+    text-decoration: line-through; /* a maioria não tem suporte, somente underline, line-through, overline */
+    letter-spacing: normal; /* espaçamento entre as letras */
+    text-transform: capitalize; /* similar as variantes da fonte */
+    width: 50rem; /* largura dessa sessão, pode ser por tag */
+    height: 7rem; /* altura */
+    padding-left: 100px; /* espaçamento entre a borda e o conteúdo, inicia no topo e segue no sentido horário */ 
+    border: 2px solid red;
+    border-radius: 50px; /* arredondar bordas */
+}
+
+
+@font-face { /* variável para criação de família de fonte */
+    font-family: "alexbrush", cursive;
+    src: url("alexbrush.ttf");
+}
+
+/* a { /* seletor de links 
+
+}
+
+a:visited { /* regras para links visitados 
+    color: brown;
+}
+
+a:hover { /* regras para mouse em cima, também pode ser aplicado para tags 
+
+} */
